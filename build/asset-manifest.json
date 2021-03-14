@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/findrepo/static/css/main.87dac359.chunk.css",
+    "main.js": "/findrepo/static/js/main.145c2d18.chunk.js",
+    "main.js.map": "/findrepo/static/js/main.145c2d18.chunk.js.map",
+    "runtime-main.js": "/findrepo/static/js/runtime-main.573c5242.js",
+    "runtime-main.js.map": "/findrepo/static/js/runtime-main.573c5242.js.map",
+    "static/css/2.150d169a.chunk.css": "/findrepo/static/css/2.150d169a.chunk.css",
+    "static/js/2.c3b4521b.chunk.js": "/findrepo/static/js/2.c3b4521b.chunk.js",
+    "static/js/2.c3b4521b.chunk.js.map": "/findrepo/static/js/2.c3b4521b.chunk.js.map",
+    "index.html": "/findrepo/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/findrepo/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.87dac359.chunk.css.map": "/findrepo/static/css/main.87dac359.chunk.css.map",
+    "static/js/2.c3b4521b.chunk.js.LICENSE.txt": "/findrepo/static/js/2.c3b4521b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.573c5242.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.c3b4521b.chunk.js",
+    "static/css/main.87dac359.chunk.css",
+    "static/js/main.145c2d18.chunk.js"
+  ]
+}

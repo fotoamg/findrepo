@@ -1,0 +1,449 @@
+
+/*
+* Could have benn scss or sass used, but doing the hard way for now.
+* Not to need ruby python etc to install the whole M$ c compiler just for gems...
+*/
+.dropdown-menu.show {
+    background-color:#007bff;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+.mainContainer {
+   /* background-color: lavender; */
+    padding-bottom: 10px;
+    padding-top: 2px;
+    overflow-x: hidden;
+}
+
+.hiddenContent {
+    /*display: none;*/
+    visibility: hidden;
+}
+
+.navbarOuter, .horNavContainer {
+    /*display: flex;*/
+    width: 100%;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.horNavRow {
+    /* display: flex;*/
+    width: 100%;
+    margin-right: 0px;
+}
+
+.horNavRow .horNavLinkCol {
+    text-align: left;
+    display: flex;
+}
+
+.vertNavDropCol {
+    text-align: right;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.horNav.nav-link.active {
+    border-bottom: 3px solid blue;
+}
+
+.vertNav.nav-link.active {
+    border-left: 3px solid blue;
+}
+
+.searchContainer {
+    background-color: darkblue;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.searchContainer svg {
+    cursor:pointer;
+}
+
+.searchContainer input[type=text] {
+    max-width: 100px;
+}
+
+.searchCell {
+    padding-right: 5px;
+    text-align: right;
+    vertical-align: middle;
+    white-space: normal;
+}
+
+.filterCell {
+    padding-right: 5px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: normal;
+}
+
+.searchCell input {
+    border-radius: 6px;
+}
+
+.searchCell label {
+    padding-right: 5px;
+}
+
+.filterCheckItem {
+    display:inline-block;
+    white-space: nowrap;
+    background-color: darkblue;
+}
+
+.filterCellError {
+    text-align: center;
+}
+
+.filterCell label {
+    padding-right: 5px;
+}
+
+.langTopicOuter, .starsFilterOuter {
+    text-align: center;
+}
+
+.langTopic span, .langTopic label {
+    text-align: right;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.starsFilter, .sizeFilter {
+    padding-top: 6px;
+    /*border: 1px solid gray;*/
+    border-radius: 6px;
+    background-color: rgba(25, 25, 112, 0.667);
+    text-align: center;
+    white-space: normal;
+    /*overflow: auto;*/
+    display: block;
+    margin-bottom: 5px;
+}
+
+.starsFilter .inputErrorHolder, .sizeFilter .inputErrorHolder {
+    display: inline-block;
+}
+
+.starsMainLabel, .sizeMainLabel {
+    padding-right: 20px;
+}
+
+.starsFilterNumberRow, .sizeFilterNumberRow {
+    display: block;
+}
+
+.starsFilterNumberRow label, .sizeFilterNumberRow label  {
+    padding-left: 15px;
+}
+
+.starsFilter span, .sizeFilter span {
+    text-align: right;
+    display: inline-block;
+    padding-left: 5px;
+    
+    margin-bottom: 2px;    
+    padding-bottom: 2px;
+    /*height: 100%;*/
+}
+
+.starsFilter label, .sizeFilter label {
+    text-align: right;
+    display: inline-block;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+    height: 100%;
+}
+
+.langTopic input[type=text], .starsFilter input[type=text] {
+    border-radius: 6px;
+}
+
+.searchButtonsOuter, .modToggleOuter{
+    padding: 1px;
+    margin: 2px;
+    text-align: right;
+}
+
+.searchButtonsOuter {
+    vertical-align: bottom;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.searchButton {
+    width: 65px;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+
+.errorMsg {
+    background-color: rgb(180, 0, 0);
+    color:rgb(243, 221, 221);
+    border: solid 1px rgba(248, 2, 2, 0.568);
+    padding: 1px 3px;
+    margin: 5px;
+    border-radius: 5px;  
+}
+
+.repoList {
+    padding: 3px;
+}
+
+.resultCol {
+    padding: 5px;
+   /* text-align: center;
+    vertical-align: middle;*/
+    background-color: lightgray;
+    /*background-image:linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);*/
+    /*border-radius: 10px;*/
+    border-radius: 4px;
+    min-height: 400px;
+    /*color: white;*/
+}
+
+.totalResultCol {
+    text-align: right;
+}
+
+.totalResultCurrent {
+    margin-right: 50px;
+    vertical-align: top;
+    cursor: auto;
+}
+
+.pagerButton {
+    cursor: pointer;
+    padding-left: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.pagerButton:hover {
+    color:darkmagenta;
+}
+
+.totalResultCol svg {
+    cursor: pointer;
+    background-color: darkgray;
+    border-radius: 3px;  
+    padding: 1px;
+}
+
+.spinningLoader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid rgba(29, 161, 242, 0.2);
+    border-left-color: rgb(29, 161, 242);
+    background: transparent;
+    animation: rotate-s-loader 1s linear infinite;
+    margin: 6rem auto;
+  }
+  
+  @keyframes rotate-s-loader {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.emptyResult {
+    height: 100%;
+    /*border: solid 2px grey;
+    /*border-radius: 10px;*/
+    border-radius: 4px;
+    background-color: lightgray;
+    /* background-image:linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);*/
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sortOrderRow {
+    margin: 3px 0px;
+    padding: 2px 0px;
+    font-size: smaller;
+    overflow: hidden;    
+}
+
+.sortByCol div, .orderByCol div {
+    display: inline;
+    padding-left: 10px;
+}
+
+.sortByCol div input, .orderByCol div input {
+    margin-right: 3px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+.sortByCol div label, .orderByCol div label {
+    display: inline;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.sortByCol div input:checked, .orderByCol div input:checked {
+    pointer-events: none;
+}
+
+.pagerRow {
+    margin: 3px 0px;
+    padding: 2px 0px;
+    font-size: smaller;
+    overflow: hidden;
+    text-align: right;
+}
+
+.repoRow {
+    /*color: black;*/
+    font-size: smaller;
+    border-radius: 5px;
+    background-color: darkgray;
+    /* background-image:linear-gradient(180deg, rgb(55, 95, 170) 0%, #777777 90%); */
+    /* background-image:linear-gradient(180deg, rgb(177, 201, 245) 30%, #5741a5 100%);*/ 
+    margin: 3px 0px;
+    padding: 2px 0px;
+    /*max-height: 50px;*/
+    overflow: hidden;
+}
+
+/*.repoColName {
+    max-width: 200px;
+}*/
+
+.repoColName div, .repoFullName {
+    font-weight: bold;
+    max-width: 280px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 3px;
+}
+
+.repoColNowrap DIV {
+    white-space: nowrap;
+}
+
+.repoColDesc, .repoColLangs {
+    max-width: 280px;
+    max-height: 120px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.repoColLangs button {
+    font-size: small;
+    padding: 1px;
+    padding-top: 1px;
+    margin: 0px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    padding-bottom: 3px;
+    line-height: 0.8;
+}
+
+.repoColDates {
+    text-align: right;
+}
+
+.repoColDesc P {
+    max-width: 280px;
+    max-height: 120px;
+    /*white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+}
+
+.repoColImg {
+    text-align: right;
+    padding: 5px;    
+
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.repoColImg Img {
+    border-radius: 50%;
+}
+
+.historyContainer {
+    margin: 10px;
+    height: 100%;
+    height: 90vh !important;
+}
+ 
+.historyContainerRow {
+    height: 100%;
+    width: 100%;
+    height: 90vh !important;
+}
+
+.historyLeft {
+    overflow-y: scroll;
+    max-width: 220px;
+    padding: 5px;
+    background-color: lightgray;
+    height: 85vh !important;
+    max-width: 16%;
+    border-radius: 4px;
+}
+
+.historyTotalReq {
+    width: 99%;
+    text-align: right;
+}
+
+.historyLeft textarea {
+    white-space: normal;
+    line-break: auto;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.historyRight {
+    overflow-y: auto;
+    background-color:lightgrey;
+    height: 85vh !important;
+    max-width: 81%;
+    padding: 1px;
+    border-radius: 4px;
+}
+
+
+.historyItemSelected  > textarea {
+    pointer-events: none;
+    border: 2px solid blue;
+}
+
+.historyItem > textarea {
+    cursor:pointer;
+}
